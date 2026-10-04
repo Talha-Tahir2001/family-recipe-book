@@ -30,6 +30,7 @@ pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -37,3 +38,12 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local app data (never commit family audio or generated narration)
+/uploads/
+/cache/
+/data/
+/scripts/.tmp/
+
+# local dev logs
+dev.log
